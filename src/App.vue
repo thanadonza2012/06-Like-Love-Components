@@ -1,14 +1,23 @@
 <template>
   <div id="app">
-    <div class="row"></div>
-    <div class="col-4"></div>
+    <div class="row">
+    <div class="col-4">
     <img alt="Vue logo" src="./assets/1.jpg" height="300px" width="300px">
+     <CsBotton/>
     <img alt="Vue logo" src="./assets/2.jpg" height="300px" width="300px">
+     <CsBotton/>
+     </div>
+     </div>
     <img alt="Vue logo" src="./assets/3.jpg" height="300px" width="300px">
+     <CsBotton/>
     <img alt="Vue logo" src="./assets/4.jpg" height="300px" width="300px">
+     <CsBotton/>
     <img alt="Vue logo" src="./assets/5.jpg" height="300px" width="300px">
+     <CsBotton/>
     <img alt="Vue logo" src="./assets/6.jpg" height="300px" width="300px">
+     <CsBotton/>
     <img alt="Vue logo" src="./assets/7.jpg" height="300px" width="300px">
+     <CsBotton/>
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <div class="row">
   
