@@ -1,49 +1,50 @@
 <template>
- <div>
-  <button @click="counter += 1">Add 1</button>
-  
-    <p>The button above has been clicked {{ counter }} times.</p>
-    <p v-bind:style="{fontSize: fsize + 'px'}">Hello</p>
-    <button @click="upFunction()" class ="btn btn-info"> 👍 </button>
-    <button @click="downFunction()" class ="btn btn-info"> <i class="fa fa-angry"></i> </button>
-       <p v-bind:style="{fontSize: fsize - 'px'}"></p>
-        </div> 
- 
+  <div>
+    <p>ยอดคะแนนความชื่นชอบ {{ counter }} คะแนน.</p>
+    <button @click="loveFunction()" class="btn btn-primary ml-2">🥰</button>
+    <button @click="likeFunction()" class="btn btn-success ml-2">🙂</button>
+    <button @click="samFunction()" class="btn btn-secondary ml-2">😐</button>
+    <button @click="nolikeFunction()" class="btn btn-warning ml-2">🙁</button>
+    <button @click="noloveFunction()" class="btn btn-danger ml-2">😡</button>
+    <p v-bind:style="{fontSize: fsize - 'px'}"></p>
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'CsBotton',
-    data: function() {
-  return{
-    counter: 0,
-    fsize:60,
-    }
+  name: "CsBotton",
+  data: function () {
+    return {
+      counter: 0,
+      fsize: 60,
+    };
   },
-  props:{
-    label:String,
-    
+  props: {
+    label: String,
   },
-  methods : {
-  upFunction: function(){
-    this.counter += 1
-    this.fsize += 10
-  this.$emit('cc',this.fsize)
+  methods: {
+    loveFunction: function () {
+      this.counter += 2;
 
-    console.log(this.fsize);
-    console.log(this.counter);
-  },
-    downFunction: function(){
-    this.counter -= 1
-    this.fsize -= 10
+    },
+    likeFunction: function () {
+      this.counter += 1;
+    },
+    samFunction: function () {
+      this.counter += 0;
 
-    console.log(this.fsize);
-    console.log(this.counter);
+    },
+    nolikeFunction: function () {
+      this.counter -= 1;
+ 
+    },
+    noloveFunction: function () {
+      this.counter -= 2;
+ 
     },
   },
-}
+};
 </script>
 
 <style>
-
 </style>
