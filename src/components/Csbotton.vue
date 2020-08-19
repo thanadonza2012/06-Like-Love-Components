@@ -5,7 +5,7 @@
     <p>The button above has been clicked {{ counter }} times.</p>
     <p v-bind:style="{fontSize: fsize + 'px'}">Hello</p>
     <button @click="upFunction()" class ="btn btn-info"> 👍 </button>
-    <button @click="downFunction()" class ="btn btn-info"> <i class="far fa-angry"></i> </button>
+    <button @click="downFunction()" class ="btn btn-info"> <i class="fa fa-angry"></i> </button>
        <p v-bind:style="{fontSize: fsize - 'px'}"></p>
         </div> 
  
